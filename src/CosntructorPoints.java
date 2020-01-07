@@ -22,7 +22,19 @@
 	name of that method is clone()
 	this method is available in Object class.
 
-10) 
+10) one constructor can invoke another constructor using
+    this keyword.
+
+    to use this keyword for constructor invocation
+    --------------------------------------------------
+    1) matching constructor must exists.
+    2) call using this must be the first statement in constructor.
+    3) cant call more than one constructor directly using this keyword.
+    4) chaining is allowed.
+    5) recursive-calls are not allowed for constructors.
+    6) only a constructor can call another constructor
+	(you cant invoke a constructor thru a method)
+	(but a constructor can call a method)
 
 
 
