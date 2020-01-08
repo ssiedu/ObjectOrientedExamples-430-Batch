@@ -4,6 +4,17 @@ public class Account {
     private int balance;
     private static int totalCash;
     
+    public Account(int x, String y){
+        ano=x;
+        name=y;
+    }
+    public Account(int a, String b, int c){
+        //ano=a;
+        //name=b;
+        this(a,b);
+        balance=c;
+        totalCash=totalCash+c;
+    }
     
     public  static void showAvg(Account tmp1, Account tmp2, Account tmp3, Account tmp4){
         //we want to compute avg balance of 3 accounts
