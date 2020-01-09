@@ -1,19 +1,36 @@
 
 public class CircleUser {
     public static void main(String[] args) {
-        //here we need to compute area of 3 circle 10,100,1000
-        //you just need to create three objects
-        Circle c1=new Circle(); //one object of Circle class
-        Circle c2=new Circle(); //second object
-        Circle c3=new Circle(); //third object
+       
+        Circle c1;  
+        new Circle(10);
+        Circle c2=new Circle(20);
+        Circle c3=c2;
+        c1=c2;
+        c1.showRadius();
+        c2.showRadius();
+        c3.showRadius();
+        c3=new Circle(30);
+        System.out.println("____________________");
+        c1.showRadius();
+        c2.showRadius();
+        c3.showRadius();
+        c2=c3;
+        System.out.println("____________________");
+        c1.showRadius();
+        c2.showRadius();
+        c3.showRadius();
+        c1=new Circle(40);
+        System.out.println("____________________");
+        c1.showRadius();
+        c2.showRadius();
+        c3.showRadius();
         
-        c1.setRadius(10);
-        c2.setRadius(100);
-        c3.setRadius(1000);
         
-        c1.computeArea();
-        c2.computeArea();
-        c3.computeArea();
+        
+        
+        
+        
         
         
     }
